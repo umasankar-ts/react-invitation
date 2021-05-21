@@ -1,0 +1,136 @@
+:root{
+	--theme-light-color:#F14E95;
+	--theme-dark-color:#e40e6b;
+}
+@media (max-width:767px) and (orientation:portrait) {
+	.content-wrapper, .sidebar, .home-main-content {
+		display: none
+	}
+	.message {
+		display: block
+	}
+	body {
+		background: linear-gradient(to right top,var(--theme-dark-color),var(--theme-light-color)) !important;
+		height: 100vh
+	}
+}
+/*iphone 5/SE*/
+@media(max-height:320px){
+	.floral-border1{
+		left:0% !important
+	}
+	.floral-border2{
+		right: 0% !important
+	}
+	.banner-name-sec:after, .banner-name-sec:before{
+		width: 15% !important
+	}
+}
+/*Mobile*/
+@media(max-width:767px){
+	.groom-details{
+		padding-top: 30px
+	}
+	.bride-details{
+		padding-bottom: 30px
+	}
+	.content-wrapper{
+		padding-top: 40px !important;
+		padding-bottom: 40px !important
+	}
+	.overlay-box:after {
+    	left: -100px;
+  	}
+
+  	.overlay-box:hover:after {
+    	width: 500%;
+  	}
+  	.banner-name-sec:before{
+  		top: -20px;
+    	right: 82%;
+    	width: 20%;
+    	height: 300px
+  	}
+  	.banner-name-sec:after{
+  	    bottom: -145px;
+    	left: 77%;
+    	width: 20%;
+    	height: 300px
+	}
+}
+@media only screen and (max-width: 990px) {
+  	.overlay-box {
+    	margin-bottom: 30px;
+  	}
+}
+
+/*Desktop*/
+@media(min-width:1281px){
+	.glass{
+		min-height: 80vh;
+	}
+	.groom-details{
+  		padding-left: 50px
+	}
+	.bride-details{
+		padding-right: 50px
+	}
+	.title-section{
+  		padding-bottom:70px;
+	}
+
+}
+@media only screen 
+and (min-device-width : 731px) 
+and (max-device-height : 411px)  {
+	.glass{
+		min-height: 85vh !important
+	}
+	.banner-name-sec:after{
+		bottom: -135px !important;
+		left:75% !important;
+		width: 20%
+	}
+	.banner-name-sec:before{
+		top: -10px !important;
+	    left: -6px !important;
+	    width: 20%
+	}
+}
+
+/*Ipad*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px)  {
+	.glass{
+		min-height: 65vh
+	}
+	.banner-name-sec:before {
+		width: 25%;
+		right: 80%
+	}
+	.banner-name-sec:after{
+	    bottom: -127px;
+    	left: 80%;
+    	width: 25%
+	}
+}
+/*Ipad pro*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+  	.banner-name-sec h1{
+  		font-size: 75px
+  	}
+  	.banner-name-sec:before, .banner-name-sec:after {		
+		width: 20%;
+		height: 312px
+	}
+	.small-font{
+		font-size: 35px
+	}
+	.date{
+		font-size: 40px
+	}
+}

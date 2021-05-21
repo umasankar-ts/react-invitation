@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
+import {Container,Row,Col,Image,Button} from 'react-bootstrap';
 
 class InitialComponent extends	Component{
 	lock(){
@@ -12,13 +13,15 @@ class InitialComponent extends	Component{
 	}
 	render(){
 		return(
-			<div className="initial-bg primary-dark-bg">
-	            <div className="fingerprint-section text-center w-100">
-	            	<NavLink to="/home"> 
-	            		<label onClick={this.lock}>Click Here</label>
-	            	</NavLink>                               
-	            </div>
-            </div> 
+			<Container className="initial-bg">
+	            <Row className="home-main-content ht-100" align="center">
+	            	<Col md={12}>
+		            	<NavLink to="/home"> 
+		            		<Image onClick={this.lock} className="img-fluid invite-img animated fadeInDown" src="images/invite.png"/>		            		
+		            	</NavLink>                               
+	            	</Col>
+	            </Row>
+            </Container> 
 		)
 	}
 
