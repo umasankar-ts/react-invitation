@@ -38,7 +38,7 @@ Initial Component
 /*========================
 Banner section
 ==========================*/
-.home-main-content{  
+.home-main-content, .initial-content{  
 	display: flex;
 	align-items: center;
 	justify-content: center; 

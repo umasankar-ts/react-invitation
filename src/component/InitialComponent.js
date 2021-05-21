@@ -14,7 +14,7 @@ class InitialComponent extends	Component{
 	render(){
 		return(
 			<Container className="initial-bg">
-	            <Row className="home-main-content ht-100" align="center">
+	            <Row className="initial-content ht-100" align="center">
 	            	<Col md={12}>
 		            	<NavLink to="/home"> 
 		            		<Image onClick={this.lock} className="img-fluid invite-img animated fadeInDown" src="images/invite.png"/>		            		
